@@ -24,3 +24,18 @@ end
 def kesha_maker(array)
     array.each {|ind_item| ind_item[2] = "$"}
 end
+
+def find_a(array)
+    array.find_all {|word| word[0] == "a"}
+end
+
+def sum_array(array)
+    total = 0
+    array.each {|int| total += int}
+    total
+end
+
+def add_s(array)
+    array.collect {|word| array[1] == word ? word : word + "s"}
+end
+
