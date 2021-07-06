@@ -20,3 +20,7 @@ end
 def reverse_array(array)
     array_copy = array.clone.reverse
 end
+
+def kesha_maker(array)
+    array.each {|ind_item| ind_item[2] = "$"}
+end
